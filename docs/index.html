@@ -3,85 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Precision CAD | OmniView 3D CAD Viewer</title>
-  <meta name="description" content="Precision CAD is a mobile 3D and 2D CAD viewer for Android. View STL, OBJ, GLB, DXF, GCODE, and other precision engineering files on the go." />
+  <title>Precision CAD · 3D and 2D CAD viewer, editor and converter for Android</title>
+  <meta name="description" content="Precision CAD is an Android app to view, edit and convert 3D and 2D CAD files on your device. STL, OBJ, PLY, GLB, DXF and SVG, fully offline." />
+  <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">OmniView Mobile CAD</p>
-      <h1>Precision CAD</h1>
-      <p class="subtitle">A lightweight Android viewer for 3D and 2D engineering models, blueprints, and CNC-ready files.</p>
-      <div class="badge-row">
-        <span class="badge">App ID: com.omniview.viewer</span>
-        <span class="badge">Version: 1.0.0</span>
-      </div>
-      <div class="hero-actions">
-        <a class="button primary" href="privacy-policy.html">Privacy Policy</a>
-        <a class="button secondary" href="#features">Features</a>
-      </div>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top">Precision CAD</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#formats">Formats</a>
+      <a href="#privacy">Privacy</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+    </nav>
   </header>
 
-  <main class="page-content">
-    <section id="about" class="section card">
-      <h2>About the App</h2>
-      <p>Precision CAD is built to open and inspect engineering files directly on Android devices. It supports full file import and preview for a broad range of CAD, 3D, and laser-cutting formats.</p>
-      <dl class="app-details">
-        <div>
-          <dt>Package Name</dt>
-          <dd>com.omniview.viewer</dd>
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Android · CAD viewer &amp; editor</p>
+        <h1>Precision CAD</h1>
+        <p class="subtitle">View, edit and convert 3D and 2D engineering files right on your phone. Everything runs on your device, and your files never leave it.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="privacy-policy.html">Read the privacy policy</a>
+          <a class="button ghost" href="#features">See what it does</a>
         </div>
-        <div>
-          <dt>Version</dt>
-          <dd>1.0.0</dd>
+      </div>
+      <aside class="hero-card" aria-label="App details">
+        <dl>
+          <div><dt>Package</dt><dd>com.omniview.viewer</dd></div>
+          <div><dt>Version</dt><dd>4.0.3</dd></div>
+          <div><dt>Works on</dt><dd>Android 8.0 (API 26) and newer</dd></div>
+          <div><dt>Works offline</dt><dd>Yes, files are processed on-device</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="features">
+      <h2>What it does</h2>
+      <p>Open a drawing or model, check it, change it and export it again, without a computer.</p>
+      <div class="grid-3">
+        <div class="tile">
+          <h3>View 3D</h3>
+          <p>Hardware-accelerated OpenGL ES rendering, wireframe mode, cross-sections, measurement and a view cube.</p>
         </div>
-        <div>
-          <dt>Minimum Android</dt>
-          <dd>Android 8.0 (API 26)</dd>
+        <div class="tile">
+          <h3>View 2D</h3>
+          <p>Pan and zoom drawings, inspect layers, and measure slots, arc slots, rectangles and other shapes by their sizes.</p>
         </div>
-        <div>
-          <dt>Target Android</dt>
-          <dd>Android 13 (API 35)</dd>
+        <div class="tile">
+          <h3>Edit</h3>
+          <p>Move, rotate and scale parts, insert primitives, cut along a plane with automatic capping, sculpt meshes, and sketch in 2D with undo and redo.</p>
         </div>
-      </dl>
+        <div class="tile">
+          <h3>Nest for cutting</h3>
+          <p>Lay out parts on sheets for laser or plasma cutting, with gaps, margins, remnant lines and a parts list. Optimize finds a tighter layout.</p>
+        </div>
+        <div class="tile">
+          <h3>Convert</h3>
+          <p>Save 3D models as STL, OBJ, PLY or GLB, and 2D drawings as DXF or SVG.</p>
+        </div>
+        <div class="tile">
+          <h3>Open from anywhere</h3>
+          <p>Open files from your file manager, email or cloud apps with "Open with" or Share. No broad storage access is needed.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="features" class="section card">
-      <h2>Key Features</h2>
-      <ul class="feature-list">
-        <li>View 3D models: STL, OBJ, GLB, GLTF, PLY.</li>
-        <li>Inspect 2D engineering drawings: DXF, SVG.</li>
-        <li>Open files from other apps using content and file URIs.</li>
-        <li>Supports local storage access and safe file preview.</li>
-        <li>Hardware-accelerated 3D rendering with OpenGL ES 2.0.</li>
-      </ul>
+    <section class="section" id="formats">
+      <h2>File formats</h2>
+      <table class="formats">
+        <thead>
+          <tr><th>Format</th><th>Open</th><th>Save</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>STL</td><td>Yes</td><td>Yes</td><td>ASCII and binary</td></tr>
+          <tr><td>OBJ</td><td>Yes</td><td>Yes</td><td></td></tr>
+          <tr><td>PLY</td><td>Yes</td><td>Yes</td><td></td></tr>
+          <tr><td>glTF / GLB</td><td>Yes</td><td>Yes</td><td></td></tr>
+          <tr><td>DXF</td><td>Yes</td><td>Yes</td><td>2D entities</td></tr>
+          <tr><td>SVG</td><td>Yes</td><td>Yes</td><td>2D paths</td></tr>
+          <tr><td>G-code</td><td>Yes</td><td>No</td><td>CNC and laser toolpaths, view only</td></tr>
+          <tr><td>3DS</td><td>Yes</td><td>No</td><td>View only</td></tr>
+          <tr><td>STEP, IGES, DWG, FBX</td><td colspan="2">Coming soon</td><td></td></tr>
+        </tbody>
+      </table>
     </section>
 
-    <section id="permissions" class="section card">
-      <h2>Permissions Used</h2>
-      <p>The app only requests permissions needed to open files and render supported CAD assets.</p>
-      <ul class="permission-list">
-        <li>READ_EXTERNAL_STORAGE</li>
-        <li>MANAGE_EXTERNAL_STORAGE</li>
-        <li>READ_MEDIA_IMAGES</li>
-        <li>READ_MEDIA_VIDEO</li>
-        <li>READ_MEDIA_AUDIO</li>
-        <li>INTERNET</li>
-      </ul>
-    </section>
-
-    <section id="policy-summary" class="section card">
-      <h2>Privacy & Security</h2>
-      <p>Privacy is a core part of how Precision CAD works. The app does not collect personal user data, does not require account signup, and does not send file contents to any server by default.</p>
-      <p>For full coverage of data handling and user rights, read the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <section class="section" id="privacy">
+      <h2>Privacy</h2>
+      <p>Your CAD files stay on your device. Precision CAD does not upload drawings, models, project files or conversion results to any server.</p>
+      <p>The Home screen shows a banner ad from Google AdMob. Ads are not shown in the viewers, editors or exports. Before ads load, the app asks for your advertising choices through Google's consent form where required.</p>
+      <div class="notice">
+        <strong>Read the full policy</strong><br />
+        It covers what AdMob may process, how consent works, the permissions the app uses, and how to contact us. <a href="privacy-policy.html">Open the privacy policy</a>.
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Hosted on GitHub Pages from this repository. Use this site as the official privacy policy and app information page for Google Play verification.</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="#about">App Details</a></p>
+    <span>© 2026 Precision CAD</span>
+    <span><a href="privacy-policy.html">Privacy policy</a></span>
   </footer>
 </body>
 </html>
